@@ -22,6 +22,14 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        ForEach(Devices.allDevices, id: \.self) { deviceName in
+            LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+        }
     }
+}
+
+public enum Device: String, CaseIterable {
+    case smallestScreen = "iPhone SE (2nd generation)"
+    case largestScreen = "iPhone XS Max"
 }
