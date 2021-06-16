@@ -27,6 +27,7 @@
 		B05723342677917100FC56A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05723332677917100FC56A8 /* Assets.xcassets */; };
 		B05723372677917100FC56A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05723362677917100FC56A8 /* Preview Assets.xcassets */; };
 		B07A19602678095900A26E95 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A195F2678095900A26E95 /* FavoriteButton.swift */; };
+		B0A46979267A461400BBD637 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A46978267A461400BBD637 /* hikeData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		B05723362677917100FC56A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B05723382677917100FC56A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07A195F2678095900A26E95 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		B0A46978267A461400BBD637 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +71,8 @@
 		B048EC5B267792D200D16AC6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0A46978267A461400BBD637 /* hikeData.json */,
 				B048EC59267792C600D16AC6 /* landmarkData.json */,
-				B048EC6C26779D5400D16AC6 /* Devices.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -130,6 +132,7 @@
 			children = (
 				B05723382677917100FC56A8 /* Info.plist */,
 				B057232F2677917000FC56A8 /* LandmarksApp.swift */,
+				B0A4697A267A461900BBD637 /* Utilities */,
 				B05723332677917100FC56A8 /* Assets.xcassets */,
 				B048EC5F267793BF00D16AC6 /* Model */,
 				B05723352677917100FC56A8 /* Preview Content */,
@@ -165,6 +168,14 @@
 				B07A195F2678095900A26E95 /* FavoriteButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B0A4697A267A461900BBD637 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B048EC6C26779D5400D16AC6 /* Devices.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A46979267A461400BBD637 /* hikeData.json in Resources */,
 				B05723372677917100FC56A8 /* Preview Assets.xcassets in Resources */,
 				B05723342677917100FC56A8 /* Assets.xcassets in Resources */,
 				B048EC5A267792C600D16AC6 /* landmarkData.json in Resources */,
