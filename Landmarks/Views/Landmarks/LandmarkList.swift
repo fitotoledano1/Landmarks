@@ -35,11 +35,10 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
-            .environmentObject(ModelData())
-//        ForEach(Devices.allDevices, id: \.self) { deviceName in
-//            LandmarkList()
-//                .previewDevice(PreviewDevice(rawValue: deviceName))
-//        }
+        ForEach(Device.allCases, id: \.self) { deviceName in
+            LandmarkList()
+                .environmentObject(ModelData())
+                .previewDevice(PreviewDevice(rawValue: deviceName.rawValue))
+        }
     }
 }

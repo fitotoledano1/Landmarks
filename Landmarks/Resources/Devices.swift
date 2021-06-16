@@ -7,10 +7,7 @@
 
 import Foundation
 
-struct Devices {
-    
-    static let smallScreen = "iPhone SE (2nd generation)"
-    static let largeScreen = "iPhone XS Max"
-    
-    static let allDevices: [String] = [smallScreen, largeScreen]
+enum Device: String, CaseIterable {
+    case smallScreen = "iPhone SE (2nd generation)"
+    case largeScreen = "iPhone XS Max"
 }
